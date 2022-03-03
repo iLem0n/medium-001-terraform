@@ -1,5 +1,7 @@
 # basic terraform setup (required)
 terraform {
+  backend "remote" {}
+
   required_providers {
     kubernetes = {
       source  = "hashicorp/kubernetes"
